@@ -33,12 +33,12 @@ public class SwaggerConfig {
         boolean flag = environment.acceptsProfiles(profiles);
 
         return new Docket(DocumentationType.SWAGGER_2)
-                .groupName("Ferao-group")
+                .groupName("Unfair-group")
                 .apiInfo(apiInfo())
                 .enable(flag)
                 .select()
                 //配置要扫描的接口
-                .apis(RequestHandlerSelectors.basePackage("com.ferao.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.unfair.controller"))
                 .paths(PathSelectors.ant("/users/**"))
                 .build();
     }
@@ -52,10 +52,10 @@ public class SwaggerConfig {
     private ApiInfo apiInfo(){
 
         //作者信息
-        Contact contact = new Contact("Ferao", "https://blog.csdn.net/qq_21561501", "928971634@qq.com");
+        Contact contact = new Contact("Unfair", "https://blog.csdn.net/qq_21561501", "928971634@qq.com");
 
         return new ApiInfo(
-                "Ferao的swaggerAPI文档",
+                "Unfair的swaggerAPI文档",
                 "11",
                 "v1.0",
                 "https://blog.csdn.net/qq_21561501",
