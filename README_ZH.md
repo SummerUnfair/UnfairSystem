@@ -10,6 +10,15 @@
     7.fastjson优化-->feraofpmTest
     8.新增开源框架spring-batch-->feraospringBranch
     
+###新增内容2020/5/29
+    
+前端:
+    1.去除弹出框(优化访问体验)    
+    2.优化swagger页面
+
+后端:
+    1.解决.gitignore无效问题
+    
 ###新增内容2020/5/19
 
 前端:

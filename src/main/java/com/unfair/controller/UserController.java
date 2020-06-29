@@ -28,6 +28,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/users")
 @SuppressWarnings("all")
+@Api(tags = "Unfair的查询")
 public class UserController {
 
     @Autowired
